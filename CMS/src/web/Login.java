@@ -42,10 +42,12 @@ public class Login extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
+		Client.SetName(new String(NewClientName.getBytes("iso-8859-1"),"UTF-8"));
+				Client.SetTel(new String(NewTel.getBytes("iso-8859-1"),"UTF-8"));
+				Client.SetFax(new String(NewFax.getBytes("iso-8859-1"),"UTF-8"));
+				Client.SetPostCode(new String(NewPostCode.getBytes("iso-8859-1"),"UTF-8"));
+				Client.SetBankName(new String(NewBankName.getBytes("iso-8859-1"),"UTF-8"));
+				Client.SetBankAccount(new String(NewBankAccount.getBytes("iso-8859-1"),"UTF-8"));
 		
 		SystemUserDAO userDao=new SystemUserDAO();
 		SystemUser user=(SystemUser)userDao.GetOneEntity(request.getParameter("userName"));
