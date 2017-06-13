@@ -1,18 +1,19 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8"
+﻿<%@ page language="java" contentType="text/html; charset=utf-8" 
     pageEncoding="utf-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="model.*" %> 
+<%@ page import="model.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<title>合同管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="img/title.ico">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap_3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="css/main_css/supersized.css">
     <link rel="stylesheet" type="text/css" href="css/main_css/main.css">
-    <link rel="shortcut icon" href="img/title.ico">
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,7 @@
     <![endif]-->
 
     <%
-	    
+	    ArrayList<Contract> contracts=(ArrayList<Contract>)request.getAttribute("contracts");
     %>
 	
 </head>
@@ -30,16 +31,13 @@
   <!-- 引用外部页眉    -->
   <%@ include file="Head.jsp"%>
   <script type="text/javascript">
-	document.getElementById("jcsjgl").setAttribute("class","active");
+	document.getElementById("xtgl").setAttribute("class","active");
   </script>
    
   <div class="container-manage">
-     <!-- 引用基础信息管理导航栏    -->
-     <%@ include file="BaseDataManageNav.jsp" %>
-     
-     <div class="panel panel-default col-sm-10 bg"><!--panel start-->
-
-     </div><!--panel over-->
+    <!-- 引用系统管理导航栏    -->
+    <%@ include file="SystemManageNav.jsp" %>
+    
   </div>
   
   <div style="margin-top:550px;"><jsp:include page="Footer.jsp"></jsp:include></div>
