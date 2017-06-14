@@ -8,11 +8,11 @@
 	<title>合同管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/title.ico">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap_3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="css/main_css/supersized.css">
     <link rel="stylesheet" type="text/css" href="css/main_css/main.css">
-    <link rel="shortcut icon" href="img/title.ico">
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +22,6 @@
     <![endif]-->
 
     <%
-	    
     %>
 	
 </head>
@@ -30,16 +29,16 @@
   <!-- 引用外部页眉    -->
   <%@ include file="Head.jsp"%>
   <script type="text/javascript">
-	document.getElementById("jcsjgl").setAttribute("class","active");
+	document.getElementById("cxtj").setAttribute("class","active");
   </script>
    
   <div class="container-manage">
-     <!-- 引用基础信息管理导航栏    -->
-     <%@ include file="BaseDataManageNav.jsp" %>
-     
-     <div class="panel panel-default col-sm-10 bg"><!--panel start-->
+      <!-- 引用 查询统计导航栏    -->
+      <%@ include file="QueryStatisticsNav.jsp"%>
+      
+      <div class="panel panel-default col-sm-10 bg"><!--panel start-->
 
-     </div><!--panel over-->
+      </div><!--panel over-->
   </div>
   
   <div style="margin-top:550px;"><jsp:include page="Footer.jsp"></jsp:include></div>
