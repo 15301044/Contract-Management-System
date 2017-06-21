@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="footer" style="margin-top:150px">
-    <p align="center">Copyright © 2014 软件学院<a href="mailto:12301124@bjtu.edu.cn">  万恶的酱油  </a>实训小组, All rights reserved</p>
+    <p align="center"><a href="mailto:12301124@bjtu.edu.cn">    </a></p>
   </div>
 </body>
 </html>

@@ -684,7 +684,7 @@
                 <thead>
                 	<th>序号</th>
                     <th>角色名称</th>
-                    <th>角色代码</th>
+                    <th>英文标识</th>
                     <th>角色描述</th>
                     <th>操作</th>
                 </thead>
@@ -748,7 +748,7 @@
                         <!-- <label for="用户名" class="col-sm-2 control-label" style="color:#FF0000;text-align:left;">已存在</label> -->
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">角色代码：</label>
+                        <label class="col-sm-3 control-label">英文标识：</label>
                         <div class="col-xs-3 col-sm-6">
                           <input type="text" class="form-control" id="MNewCode">
                         </div>
@@ -876,7 +876,7 @@
                         <label for="用户名" class="col-sm-3 control-label" style="color:#FF0000;text-align:left;">* &nbsp;&nbsp;<label id="nameValid"></label></label>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">角色代码：</label>
+                        <label class="col-sm-3 control-label">英文标识：</label>
                         <div class="col-xs-3 col-sm-6">
                           <input type="text" class="form-control" id="RoleCode">
                         </div>

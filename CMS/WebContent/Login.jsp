@@ -170,7 +170,7 @@
 		    		}else if(result==StatusCode.ERROR_LOGIN_OUT){
 		    			out.println("<strong>警告：&nbsp;&nbsp;</strong>您已经注销登录或者登陆超时，请重新登录!");
 		    		}else if(result==StatusCode.PROMPT_REGISTER_SUCCESS){
-		    			out.println("<strong>提示：&nbsp;&nbsp;</strong>您已经注册成功，但是还不能登录哦，静待管理员分配权限吧!");
+		    			out.println("<strong>提示：&nbsp;&nbsp;</strong>恭喜，注册成功!");
 		    		}else if(result==StatusCode.ERROR_LOGIN_OUT){
 		    			out.println("<strong>错误：&nbsp;&nbsp;</strong>抱歉，注册失败!");
 		    		}

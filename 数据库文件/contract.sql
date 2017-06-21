@@ -100,7 +100,7 @@ INSERT INTO `contract` VALUES ('21', '宇', '1', '2017-06-07', '2017-06-10-07', 
 INSERT INTO `contract` VALUES ('22', '老', '1', '2017-06-08', '2017-06-10-23', '老', '6', null, null, null, '0');
 INSERT INTO `contract` VALUES ('23', '师', '1', '2017-06-08', '2017-06-10-23', '合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同', '1', null, null, null, '0');
 INSERT INTO `contract` VALUES ('26', '好', '2', '2017-06-07', '2017-06-10-23', '合同合同合同合同66666666', '1', '6', null, null, '0');
-INSERT INTO `contract` VALUES ('27', '棒', '3', '2017-06-08', '2017-06-10-23', '宋震SB宋震SB宋震SB', '1', null, null, null, '0');
+INSERT INTO `contract` VALUES ('27', '棒', '3', '2017-06-08', '2017-06-10-23', '宋震SBSBSB', '1', null, null, null, '0');
 INSERT INTO `contract` VALUES ('28', 'hetong0001', '2', '2017-06-07', '2017-06-10-23', '26984326985236987542', '6', '5', null, null, '1');
 INSERT INTO `contract` VALUES ('29', 'contract0088', '3', '2017-06-10', '2017-06-10-10', '1.合伙因以下事由之一得终止：①合伙期届满；②全体合伙人同意终止合伙关系；③合伙事业完成或不能完成；④合伙事\r\n业违反法律被撤销；⑤法院根据有关当事人请求判决解散。\r\n\r\n2.合伙终止后的事项：①即行推举清算人，并邀请____________中间人(或公证员)参与清算；②清算后如有盈余，则按收\r\n取债权、清偿债务、返还出资、按比例分配剩余财产的顺序进行。固定资产和不可分物，可作价卖给合伙人或第三人，其\r\n价款参与分配；③清算后如有亏损，不论合伙人出资多少，先以合伙共同财产偿还，合伙财产不足清偿的部分，由合伙人\r\n按出资比例承担。\r\n', '6', '6', null, null, '1');
 INSERT INTO `contract` VALUES ('30', '的', '2', '2017-06-08', '2017-06-10-10', '的的的的的的的的的的的', '6', '5', null, null, '1');
@@ -737,8 +737,8 @@ INSERT INTO `operateflow` VALUES ('77', '32', '6', '5', '1', '通过！！', '20
 INSERT INTO `operateflow` VALUES ('78', '32', '1', '6', '1', '还是签了吧', '2017-06-08 16:55:46', '1');
 INSERT INTO `operateflow` VALUES ('79', '33', '6', '1', '1', null, '2017-06-10 10:32:16', '0');
 INSERT INTO `operateflow` VALUES ('80', '33', '6', '4', '1', null, '2017-06-10 10:42:15', '0');
-INSERT INTO `operateflow` VALUES ('81', '33', '6', '3', '1', '李鹏翔会签完毕！！哈哈哈', '2017-06-10 10:38:57', '0');
-INSERT INTO `operateflow` VALUES ('82', '33', '2', '3', '1', '姚宜椿会签完毕', '2017-06-10 10:40:39', '0');
+INSERT INTO `operateflow` VALUES ('81', '33', '6', '3', '1', '聂文骏会签完毕！！哈哈哈', '2017-06-10 10:38:57', '0');
+INSERT INTO `operateflow` VALUES ('82', '33', '2', '3', '1', '马烈会签完毕', '2017-06-10 10:40:39', '0');
 INSERT INTO `operateflow` VALUES ('83', '33', '1', '3', '1', 'Boss会签完毕', '2017-06-10 10:39:41', '0');
 INSERT INTO `operateflow` VALUES ('84', '33', '6', '5', '2', '第一次，不通过！！哈哈哈', '2017-06-10 10:41:45', '0');
 INSERT INTO `operateflow` VALUES ('85', '33', '6', '6', '-1', null, '2017-06-10 10:38:30', '0');
@@ -821,12 +821,12 @@ CREATE TABLE `role` (
 -- ----------------------------
 -- Records of role
 -- ----------------------------
-INSERT INTO `role` VALUES ('1', 'XYH', '新用户', '没有任何权限', '0');
-INSERT INTO `role` VALUES ('2', 'XTGLY', '系统管理员', '拥有系统最高权限', '0');
-INSERT INTO `role` VALUES ('3', 'HTCZY', '合同操作员', '对合同进行管理', '0');
-INSERT INTO `role` VALUES ('4', 'ZSXTGLY', '专属系统管理员', '只有系统管理的权限', '0');
+INSERT INTO `role` VALUES ('1', 'NUser', '新用户', '没有任何权限', '0');
+INSERT INTO `role` VALUES ('2', 'SManager', '系统管理员', '拥有系统最高权限', '0');
+INSERT INTO `role` VALUES ('3', 'Operator', '合同操作员', '对合同进行管理', '0');
+INSERT INTO `role` VALUES ('4', 'TManager', '临时管理员', '只有系统管理的权限', '0');
 INSERT INTO `role` VALUES ('5', 'hfjd', 'freserw', 'raeds', '1');
-INSERT INTO `role` VALUES ('6', 'JL', '经理', '测试用', '0');
+INSERT INTO `role` VALUES ('6', 'Manager', '经理', '测试用', '0');
 INSERT INTO `role` VALUES ('7', 'JL', 'SB', 'namjdsbfbco', '1');
 
 -- ----------------------------
@@ -988,7 +988,7 @@ CREATE TABLE `system_user` (
 -- ----------------------------
 -- Records of system_user
 -- ----------------------------
-INSERT INTO `system_user` VALUES ('1', 'ssl', '2', '邵传磊', 'ssl', '', '123456789', '0');
+INSERT INTO `system_user` VALUES ('1', 'ssl', '2', '邵传磊', 'scl', '', '123456789', '0');
 INSERT INTO `system_user` VALUES ('2', 'nwj', '2', '聂文骏', 'nwj', '15301045@bjtu.edu.cn', '', '0');
 INSERT INTO `system_user` VALUES ('3', 'lzc', '1', '李泽琛', 'lzc', '', '', '0');
 INSERT INTO `system_user` VALUES ('5', 'lws', '3', '李文盛', 'lws', '', '', '0');
